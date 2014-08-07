@@ -1,0 +1,125 @@
+.ui-editor {
+    visibility:hidden;
+    opacity:0;
+    position: fixed;
+    top:0;
+    left:0;
+    /* left: 50%; */
+    /* top: 50%; */
+
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    
+    -webkit-transform: translate3d(0, 0, 0) ;
+
+    -webkit-transition: opacity 200ms linear;
+
+    overflow: hidden;
+    -webkit-highlight: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    
+    z-index: 10001;
+}
+
+.ui-editor-wrapper {
+    position: relative;
+    top: 0px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    padding: 0;
+    margin: 10px;
+    border-radius: 2px;
+
+    background-color:#fff;
+    
+}
+
+.ui-editor-body {
+    padding: 15px;
+}
+
+.ui-editor-body textarea {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    border: none;
+    margin: 0; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #000;
+    width: 100%;
+    height: auto;
+    min-height: 110px;
+
+    -webkit-appearance: none;
+
+}
+
+.ui-editor-body .content-cpoy {
+    position: absolute;
+    left: -9999px;
+    border: solid 1px #C00;
+    height: auto;
+    min-height: 110px;
+    
+}
+
+.ui-editor-footer {
+    height: 33px;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    background: #FFF;
+    border-top:1px solid #C8C7CC;
+    border-radius: 0 0 2px 2px;
+    /* display: -webkit-box; */
+    /* -webkit-box-pack: end; */
+    /* -webkit-box-align: center; */
+    /* -webkit-box-sizing: content-box; */
+
+}
+
+.ui-editor-button {
+    position:absolute;
+    line-height: 33px;
+    height: 33px;
+    width: 81px;
+    color: #FFF;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    
+}
+.ui-editor-button.enter {
+    right:10px;
+    height:35px;
+    background-color: #2791DC;
+    
+}
+.ui-editor-button.cancel {
+    right:101px;
+    background-color: #FFF;
+    color: #808080;
+    border: 1px solid #D4D4D4;
+    
+}
+
+.ui-editor.ui-no-animation {
+    -webkit-transition-duration: 0;
+}
+
+.ui-editor.js-show{
+   visibility:visible;
+   opacity:1; 
+}
+
+.poor-device .ui-editor{
+    position: absolute;
+}
+
